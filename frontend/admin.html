@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Admin Dashboard</div>
+    <div class="nav-right">
+      <span id="roleText"></span>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <!-- Add / Update Product Form -->
+  <div class="form-box">
+    <input type="hidden" id="productId">
+    <input type="text" id="name" placeholder="Product Name">
+    <input type="number" id="price" placeholder="Price">
+    <input type="file" id="image">
+    <button onclick="saveProduct()">Save Product</button>
+  </div>
+
+  <!-- Product List -->
+  <div id="productContainer" class="product-grid"></div>
+
+  <!-- Pagination -->
+  <div class="pagination">
+    <button onclick="prevPage()">Previous</button>
+    <span id="pageInfo"></span>
+    <button onclick="nextPage()">Next</button>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

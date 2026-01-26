@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products</title>
+  <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <div class="logo">Products</div>
+  <div class="nav-right">
+    <input type="text" id="searchBox" placeholder="Search products..." onkeyup="searchProducts()">
+    <button onclick="window.location.href='cart.html'">View Cart</button>
+    <span id="roleText"></span>
+      <button onclick="logout()">Logout</button>
+  </div>
+</div>
+
+<div id="productContainer" class="product-grid"></div>
+
+<!-- Pagination -->
+<div class="pagination">
+  <button onclick="prevPage()">Previous</button>
+  <span id="pageInfo"></span>
+  <button onclick="nextPage()">Next</button>
+</div>
+
+
+
+<!-- Product Grid -->
+<div id="productContainer" class="product-grid"></div>
+
+<!-- Pagination -->
+
+
+<script src="js/products.js"></script>
+</body>
+</html>
