@@ -1,36 +1,36 @@
-# 🛒 E-Commerce Platform (Spring Boot + JWT)
+# E-Commerce Platform (Spring Boot + JWT)
 
 A full-stack E-Commerce Product Management Platform built using Spring Boot with JWT-based authentication, role-based authorization, and a dynamic frontend using HTML, CSS, and JavaScript.
 
 ---
 
-## 🚀 Features
+## Features
 
-### 🔐 Authentication & Security
+### Authentication & Security
 - JWT-based authentication
 - Role-based authorization (ADMIN / USER)
 - Stateless backend using Spring Security
 - Secure API access using Bearer tokens
 
-### 📦 Product Management
+### Product Management
 - Create, update, delete products (ADMIN only)
 - View products with pagination (USER & ADMIN)
 - Product validation and global exception handling
 - Search products by name
 - Handles 100+ products efficiently using pagination
 
-### 🖼 Image Handling
+### Image Handling
 - Secure product image upload using multipart requests
 - Store image paths in database
 - Public endpoint to fetch images dynamically
 
-### 🛒 Shopping Cart (Frontend)
+### Shopping Cart (Frontend)
 - Add products to cart
 - Cart stored in browser localStorage
 - Real-time total price calculation
 - Clear cart functionality
 
-### 🖥 Frontend
+### Frontend
 - Admin dashboard for product management
 - User product listing page with product cards
 - Pagination, search, and cart integration
@@ -38,7 +38,7 @@ A full-stack E-Commerce Product Management Platform built using Spring Boot with
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 Backend:
 - Java 17
@@ -61,7 +61,7 @@ Tools:
 
 ---
 
-## 🏗 Project Architecture
+## Project Architecture
 
 src/main/java
  ├── controller
@@ -74,7 +74,7 @@ src/main/java
 
 ---
 
-## 🔑 Roles & Permissions
+## Roles & Permissions
 
 ADMIN:
 - Add / Update / Delete products
@@ -87,7 +87,7 @@ USER:
 
 ---
 
-## 🔌 API Endpoints (Sample)
+## API Endpoints (Sample)
 
 POST   /api/v1/auth/login            (Public)
 GET    /api/v1/products              (USER / ADMIN)
@@ -100,7 +100,7 @@ GET    /api/v1/products/search?name= (USER / ADMIN)
 
 ---
 
-## ⚙ Authentication Flow
+## Authentication Flow
 
 1. User logs in using username and password
 2. Backend generates a JWT containing username and role
@@ -110,7 +110,7 @@ GET    /api/v1/products/search?name= (USER / ADMIN)
 
 ---
 
-## 📈 Performance & Scalability
+## Performance & Scalability
 
 - Stateless authentication using JWT
 - Pagination for optimized database access
@@ -119,7 +119,7 @@ GET    /api/v1/products/search?name= (USER / ADMIN)
 
 ---
 
-## ▶ Running the Project
+## Running the Project
 
 Backend:
 mvn spring-boot:run
@@ -129,7 +129,7 @@ Open login.html, products.html, admin.html, cart.html in browser
 
 ---
 
-## 📌 Future Enhancements
+## Future Enhancements
 
 - Order placement & checkout
 - Quantity-based cart
@@ -139,7 +139,7 @@ Open login.html, products.html, admin.html, cart.html in browser
 
 ---
 
-## 👨‍💻 Author
+## Author
 
-Built by [Your Name]
+Built by Muhammed Mishal
 Aspiring Backend / Full-Stack Developer
